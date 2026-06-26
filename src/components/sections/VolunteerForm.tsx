@@ -4,7 +4,7 @@ import { Loader2, HandHeart } from "lucide-react";
 import { insertVolunteer } from "@/lib/db";
 import { Reveal } from "../site/Reveal";
 
-const AREAS = ["Education", "Healthcare", "Women Empowerment", "Child Welfare", "Environment", "Rural Development", "Events & Outreach"];
+const AREAS = ["Teach", "Mentor", "Create Content", "Support Events", "Partner With Us"];
 
 export function VolunteerForm() {
   const [busy, setBusy] = useState(false);
@@ -35,11 +35,10 @@ export function VolunteerForm() {
         <div className="grid gap-10 overflow-hidden rounded-3xl border border-border bg-card shadow-sm md:grid-cols-2">
           <div className="relative gradient-soft p-8 sm:p-10">
             <Reveal>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Become a Volunteer</p>
-              <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">Give your time. Change a life.</h2>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Be Part of the Change</p>
+              <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">Your time, skills, and compassion can make a lasting difference.</h2>
               <p className="mt-4 text-foreground/75">
-                We're always looking for people who care. Tell us where you'd
-                like to help and our team will reach out within 48 hours.
+                Join our community of volunteers and help create brighter futures for children and young adults.
               </p>
               <div className="mt-6 inline-flex items-center gap-3 rounded-2xl bg-white px-4 py-3 text-sm shadow">
                 <HandHeart className="h-5 w-5 text-primary" />

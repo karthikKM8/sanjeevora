@@ -3,10 +3,9 @@ import { Counter } from "../site/Counter";
 import { IndianRupee, Users, CheckCircle2, HandHeart } from "lucide-react";
 
 const ITEMS = [
-  { icon: IndianRupee, label: "Total Donations Raised", value: 24800000, prefix: "₹", suffix: "" },
-  { icon: Users, label: "Active Volunteers", value: 1842, suffix: "" },
-  { icon: CheckCircle2, label: "Projects Completed", value: 215, suffix: "" },
-  { icon: HandHeart, label: "Beneficiaries Supported", value: 158000, suffix: "+" },
+  { icon: Users, label: "Children Out of School", value: 1.17, prefix: "", suffix: "M" },
+  { icon: CheckCircle2, label: "Children Under Five Stunted", value: 35.5, prefix: "", suffix: "%" },
+  { icon: HandHeart, label: "Drop Out During Secondary", value: 10, prefix: "1 in ", suffix: "" },
 ];
 
 export function Impact() {
@@ -16,13 +15,16 @@ export function Impact() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="mx-auto max-w-3xl text-center text-white">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] opacity-90">Our Impact</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] opacity-90">The Reality We Face</p>
             <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
-              Numbers that translate into lives changed.
+              The Problems That Still Remain Unseen
             </h2>
+            <p className="mt-4 text-sm opacity-90 text-center max-w-2xl mx-auto">
+              Every child deserves the opportunity to learn, grow, and dream. Yet millions across India continue to face challenges that prevent them from reaching their full potential.
+            </p>
           </div>
         </Reveal>
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-6 sm:grid-cols-3 mx-auto max-w-5xl">
           {ITEMS.map((it, i) => {
             const Icon = it.icon;
             return (
@@ -39,6 +41,11 @@ export function Impact() {
             );
           })}
         </div>
+        <Reveal delay={0.3}>
+          <div className="mt-12 text-center text-white/90 text-sm max-w-3xl mx-auto">
+            These challenges inspire our commitment to creating opportunities that transform lives through education, nutrition, mentorship, and community support.
+          </div>
+        </Reveal>
       </div>
     </section>
   );

@@ -10,9 +10,9 @@ export function Causes() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Our Causes</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Our Programs</p>
             <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
-              Six fronts of change — one shared mission.
+              Creating Sustainable Change Through Four Core Programs
             </h2>
           </div>
         </Reveal>

@@ -1,8 +1,8 @@
 import { Calendar, ArrowRight } from "lucide-react";
 import { Reveal } from "../site/Reveal";
-import education from "@/assets/cause-education.jpg";
-import women from "@/assets/cause-women.jpg";
-import env from "@/assets/cause-environment.jpg";
+import education from "@/assets/1 (2).jpeg";
+import women from "@/assets/1 (4).jpeg";
+import env from "@/assets/1 (1).jpeg";
 
 const EVENTS = [
   { date: "Jul 12, 2026", img: education, title: "Scholarships Day 2026", summary: "Awarding 250 new merit scholarships at our annual ceremony in Delhi." },

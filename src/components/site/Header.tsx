@@ -5,12 +5,14 @@ import logo from "@/assets/logo.png";
 
 const NAV = [
   { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
-  { to: "/causes", label: "Causes" },
-  { to: "/events", label: "Events" },
+  { to: "/about", label: "About Us" },
+  { to: "/mission", label: "Our Mission" },
+  { to: "/programs", label: "Our Programs" },
   { to: "/volunteer", label: "Volunteer" },
+  { to: "/gallery", label: "Gallery" },
   { to: "/contact", label: "Contact" },
 ] as const;
+
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -37,7 +39,7 @@ export function Header() {
         <Link to="/" className="flex items-center gap-2 shrink-0">
           <img src={logo} alt="Sanjeevora" width={36} height={36} className="h-9 w-9 object-contain" />
           <span className="font-display text-xl font-bold tracking-tight text-foreground">
-            Sanjeevora
+            Jeevora Foundation
           </span>
         </Link>
         <nav className="hidden items-center gap-1 lg:flex">

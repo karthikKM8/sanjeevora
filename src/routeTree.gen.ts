@@ -11,10 +11,12 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VolunteerRouteImport } from './routes/volunteer'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as ProgramsRouteImport } from './routes/programs'
+import { Route as MissionRouteImport } from './routes/mission'
+import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as EventsRouteImport } from './routes/events'
 import { Route as DonateRouteImport } from './routes/donate'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as CausesRouteImport } from './routes/causes'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -32,6 +34,21 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProgramsRoute = ProgramsRouteImport.update({
+  id: '/programs',
+  path: '/programs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MissionRoute = MissionRouteImport.update({
+  id: '/mission',
+  path: '/mission',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EventsRoute = EventsRouteImport.update({
   id: '/events',
   path: '/events',
@@ -45,11 +62,6 @@ const DonateRoute = DonateRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CausesRoute = CausesRouteImport.update({
-  id: '/causes',
-  path: '/causes',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AdminRoute = AdminRouteImport.update({
@@ -87,10 +99,12 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/admin': typeof AdminRoute
-  '/causes': typeof CausesRoute
   '/contact': typeof ContactRoute
   '/donate': typeof DonateRouteWithChildren
   '/events': typeof EventsRoute
+  '/gallery': typeof GalleryRoute
+  '/mission': typeof MissionRoute
+  '/programs': typeof ProgramsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/volunteer': typeof VolunteerRoute
   '/donate/failure': typeof DonateFailureRoute
@@ -101,10 +115,12 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/admin': typeof AdminRoute
-  '/causes': typeof CausesRoute
   '/contact': typeof ContactRoute
   '/donate': typeof DonateRouteWithChildren
   '/events': typeof EventsRoute
+  '/gallery': typeof GalleryRoute
+  '/mission': typeof MissionRoute
+  '/programs': typeof ProgramsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/volunteer': typeof VolunteerRoute
   '/donate/failure': typeof DonateFailureRoute
@@ -116,10 +132,12 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/admin': typeof AdminRoute
-  '/causes': typeof CausesRoute
   '/contact': typeof ContactRoute
   '/donate': typeof DonateRouteWithChildren
   '/events': typeof EventsRoute
+  '/gallery': typeof GalleryRoute
+  '/mission': typeof MissionRoute
+  '/programs': typeof ProgramsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/volunteer': typeof VolunteerRoute
   '/donate/failure': typeof DonateFailureRoute
@@ -132,10 +150,12 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/admin'
-    | '/causes'
     | '/contact'
     | '/donate'
     | '/events'
+    | '/gallery'
+    | '/mission'
+    | '/programs'
     | '/sitemap.xml'
     | '/volunteer'
     | '/donate/failure'
@@ -146,10 +166,12 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/admin'
-    | '/causes'
     | '/contact'
     | '/donate'
     | '/events'
+    | '/gallery'
+    | '/mission'
+    | '/programs'
     | '/sitemap.xml'
     | '/volunteer'
     | '/donate/failure'
@@ -160,10 +182,12 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/admin'
-    | '/causes'
     | '/contact'
     | '/donate'
     | '/events'
+    | '/gallery'
+    | '/mission'
+    | '/programs'
     | '/sitemap.xml'
     | '/volunteer'
     | '/donate/failure'
@@ -175,10 +199,12 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   AdminRoute: typeof AdminRoute
-  CausesRoute: typeof CausesRoute
   ContactRoute: typeof ContactRoute
   DonateRoute: typeof DonateRouteWithChildren
   EventsRoute: typeof EventsRoute
+  GalleryRoute: typeof GalleryRoute
+  MissionRoute: typeof MissionRoute
+  ProgramsRoute: typeof ProgramsRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   VolunteerRoute: typeof VolunteerRoute
 }
@@ -197,6 +223,27 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/programs': {
+      id: '/programs'
+      path: '/programs'
+      fullPath: '/programs'
+      preLoaderRoute: typeof ProgramsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mission': {
+      id: '/mission'
+      path: '/mission'
+      fullPath: '/mission'
+      preLoaderRoute: typeof MissionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/events': {
@@ -218,13 +265,6 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/causes': {
-      id: '/causes'
-      path: '/causes'
-      fullPath: '/causes'
-      preLoaderRoute: typeof CausesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/admin': {
@@ -291,10 +331,12 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   AdminRoute: AdminRoute,
-  CausesRoute: CausesRoute,
   ContactRoute: ContactRoute,
   DonateRoute: DonateRouteWithChildren,
   EventsRoute: EventsRoute,
+  GalleryRoute: GalleryRoute,
+  MissionRoute: MissionRoute,
+  ProgramsRoute: ProgramsRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   VolunteerRoute: VolunteerRoute,
 }

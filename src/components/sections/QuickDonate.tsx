@@ -3,7 +3,7 @@ import { useNavigate } from "@tanstack/react-router";
 import { Heart, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 
-const PRESETS = [800, 1200, 3000] as const;
+const PRESETS = [5000, 8000, 14000, 20000] as const;
 
 export function QuickDonate() {
   const navigate = useNavigate();
@@ -33,8 +33,8 @@ export function QuickDonate() {
           <Heart className="h-4 w-4 fill-current" />
         </span>
         <div>
-          <h3 className="font-display text-lg font-bold leading-none">Make a donation</h3>
-          <p className="text-xs text-muted-foreground">100% goes to programs on the ground</p>
+          <h3 className="font-display text-lg font-bold leading-none">Make a Difference Today</h3>
+          <p className="text-xs text-muted-foreground">Every contribution helps create opportunities</p>
         </div>
       </div>
 

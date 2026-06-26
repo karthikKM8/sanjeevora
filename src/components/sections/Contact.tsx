@@ -31,21 +31,24 @@ export function Contact() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Contact Us</p>
-            <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">Let's start a conversation</h2>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Reach Us</p>
+            <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">Every Conversation Begins a Change</h2>
+            <p className="mt-4 text-base text-foreground/70">
+              Whether you want to donate, volunteer, partner with us, or simply learn more about our mission, we'd love to hear from you. Every conversation is an opportunity to create lasting impact in the lives of children and young adults.
+            </p>
           </div>
         </Reveal>
         <div className="mt-12 grid gap-8 lg:grid-cols-[1fr_1.2fr]">
           <div className="space-y-4">
             <div className="rounded-3xl border border-border bg-card p-6">
-              <div className="flex items-start gap-3"><MapPin className="mt-0.5 h-5 w-5 text-primary" /><div><p className="text-sm font-semibold">Office</p><p className="text-sm text-muted-foreground">12, Green Avenue, New Delhi 110001</p></div></div>
-              <div className="mt-4 flex items-start gap-3"><Phone className="mt-0.5 h-5 w-5 text-primary" /><div><p className="text-sm font-semibold">Phone</p><p className="text-sm text-muted-foreground">+91 98765 43210</p></div></div>
-              <div className="mt-4 flex items-start gap-3"><Mail className="mt-0.5 h-5 w-5 text-primary" /><div><p className="text-sm font-semibold">Email</p><p className="text-sm text-muted-foreground">hello@sanjeevora.org</p></div></div>
+              <div className="flex items-start gap-3"><MapPin className="mt-0.5 h-5 w-5 text-primary" /><div><p className="text-sm font-semibold">Location</p><p className="text-sm text-muted-foreground">Jeevora Foundation<br/>No. 33, Top Floor, CBI Main Road, Pilappa Garden,<br/>Ganganagar, Bengaluru – 560032, Karnataka, India</p></div></div>
+              <div className="mt-4 flex items-start gap-3"><Phone className="mt-0.5 h-5 w-5 text-primary" /><div><p className="text-sm font-semibold">Phone</p><p className="text-sm text-muted-foreground">+91 70198 27645</p></div></div>
+              <div className="mt-4 flex items-start gap-3"><Mail className="mt-0.5 h-5 w-5 text-primary" /><div><p className="text-sm font-semibold">Email</p><p className="text-sm text-muted-foreground">hello@jeevorafoundation.com</p></div></div>
             </div>
             <div className="aspect-[16/10] overflow-hidden rounded-3xl border border-border bg-secondary">
               <iframe
                 title="Sanjeevora office location"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=77.20%2C28.61%2C77.24%2C28.64&layer=mapnik"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=77.58%2C13.06%2C77.66%2C13.14&layer=mapnik"
                 className="h-full w-full"
                 loading="lazy"
               />
@@ -53,9 +56,10 @@ export function Contact() {
           </div>
           <form onSubmit={onSubmit} className="grid gap-4 rounded-3xl border border-border bg-card p-6 sm:p-8">
             <div className="grid gap-4 sm:grid-cols-2">
-              <Input name="name" label="Name" required />
-              <Input name="email" type="email" label="Email" required />
+              <Input name="name" label="Full Name" required />
+              <Input name="email" type="email" label="Email Address" required />
             </div>
+            <Input name="phone" type="tel" label="Phone Number" required />
             <Input name="subject" label="Subject" required />
             <div>
               <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-foreground/70">Message</label>

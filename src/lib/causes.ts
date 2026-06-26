@@ -1,18 +1,14 @@
-import education from "@/assets/cause-education.jpg";
-import healthcare from "@/assets/cause-healthcare.jpg";
-import women from "@/assets/cause-women.jpg";
-import child from "@/assets/cause-child.jpg";
-import environment from "@/assets/cause-environment.jpg";
-import rural from "@/assets/cause-rural.jpg";
-import { BookOpen, HeartPulse, Sparkles, Baby, Leaf, Home as HomeIcon } from "lucide-react";
+import education from "@/assets/1 (2).jpeg";
+import healthcare from "@/assets/1 (3).jpeg";
+import women from "@/assets/1 (4).jpeg";
+import child from "@/assets/1 (5).jpeg";
+import { BookOpen, Utensils, Sparkles, GraduationCap } from "lucide-react";
 
 export const CAUSES = [
-  { slug: "education", title: "Education Support", image: education, icon: BookOpen, description: "Books, fees, and after-school programs that keep children in classrooms — not factories." },
-  { slug: "healthcare", title: "Healthcare Assistance", image: healthcare, icon: HeartPulse, description: "Mobile clinics, free check-ups, and life-saving medicines for the families who need them most." },
-  { slug: "women", title: "Women Empowerment", image: women, icon: Sparkles, description: "Vocational training and micro-enterprise support so women can earn, lead, and rise." },
-  { slug: "child", title: "Child Welfare", image: child, icon: Baby, description: "Nutrition, shelter, and protection for children at risk across underserved communities." },
-  { slug: "environment", title: "Environmental Protection", image: environment, icon: Leaf, description: "Tree plantation drives, clean water access, and climate-resilient community initiatives." },
-  { slug: "rural", title: "Rural Development", image: rural, icon: HomeIcon, description: "Infrastructure, livelihood, and dignity projects co-designed with the villages we serve." },
+  { slug: "nutrition", title: "Nutrition Support", image: child, icon: Utensils, description: "Healthy children learn better. We provide nutritious meals and food support to help children stay healthy, improve school attendance, and focus on their education." },
+  { slug: "education", title: "Education Support", image: education, icon: BookOpen, description: "Education opens the door to endless possibilities. Our education initiatives include school supplies, learning resources, digital education support, scholarships, and academic mentoring." },
+  { slug: "child-development", title: "Child Development", image: healthcare, icon: Sparkles, description: "Building confidence beyond the classroom. We encourage leadership, creativity, life skills, sports, arts, and emotional well-being to help children become confident and responsible." },
+  { slug: "career-readiness", title: "Career Readiness", image: women, icon: GraduationCap, description: "Preparing young adults for successful careers. Through skill development, digital literacy, communication training, mentorship, and career guidance, we help young adults become job-ready." },
 ] as const;
 
 export type Cause = (typeof CAUSES)[number];

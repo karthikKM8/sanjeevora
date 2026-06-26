@@ -15,15 +15,15 @@ export function About() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">About Sanjeevora</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">About Us</p>
             <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
-              Compassion, translated into action.
+              Building Brighter Futures, One Child at a Time
             </h2>
-            <p className="mt-4 text-base text-foreground/70">
-              Founded in 2014, Sanjeevora works alongside India's most underserved
-              communities — listening first, building together, and staying long
-              enough to see change take root.
-            </p>
+            <div className="mt-4 space-y-4 text-base text-foreground/70">
+              <p>Jeevora Foundation is dedicated to creating meaningful and lasting change in the lives of underprivileged children and young adults. We believe that every child deserves access to nutritious food, quality education, guidance, and opportunities regardless of their background.</p>
+              <p>Our work focuses on removing barriers caused by poverty by supporting children's educational journey, improving nutrition, nurturing confidence, and preparing young adults for meaningful careers.</p>
+              <p>Together with donors, volunteers, and partners, we are building stronger communities where every child has the opportunity to dream, learn, and succeed.</p>
+            </div>
           </div>
         </Reveal>
 
@@ -35,8 +35,7 @@ export function About() {
               </div>
               <h3 className="mt-4 font-display text-xl font-bold">Our Mission</h3>
               <p className="mt-2 text-foreground/75">
-                To unlock dignity, education, and opportunity for every child and
-                family we serve — through honest, transparent, community-led work.
+                To empower underprivileged children and young adults by providing nutritious food, quality education, mentorship, skill development, and career opportunities, enabling them to build independent, confident, and meaningful lives.
               </p>
             </div>
           </Reveal>
@@ -47,8 +46,7 @@ export function About() {
               </div>
               <h3 className="mt-4 font-display text-xl font-bold">Our Vision</h3>
               <p className="mt-2 text-foreground/75">
-                A more equal India — where access to learning, healthcare, and a
-                healthy planet is a birthright, not a privilege.
+                To create a future where every child, regardless of their socioeconomic background, has equal access to education, opportunity, and the support needed to reach their full potential and become a positive force in society.
               </p>
             </div>
           </Reveal>
