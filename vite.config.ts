@@ -11,6 +11,7 @@ export default defineConfig({
   // Build Output API structure at `.vercel/output`.
   nitro: {
     preset: "vercel",
+    // @ts-ignore - vercel config is valid in Nitro but missing from lovable config types
     vercel: {
       functions: {
         edge: true

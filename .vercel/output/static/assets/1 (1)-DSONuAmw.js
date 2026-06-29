@@ -1,1 +1,0 @@
-var e=`/assets/1%20(1)-CMGfcxCW.jpeg`;export{e as t};
