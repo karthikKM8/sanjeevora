@@ -1,1 +1,0 @@
-import{s as e}from"./link-CHNmpu5x.js";import{n as t,v as n}from"./index-CaibBoUd.js";var r=e(),i=()=>(0,r.jsx)(n,{to:`/donate/thank-you`,search:t.useSearch()});export{i as component};

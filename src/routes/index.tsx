@@ -16,10 +16,10 @@ import { Contact } from "@/components/sections/Contact";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Sanjeevora — Together We Can Create Lasting Change" },
-      { name: "description", content: "Support education, healthcare, environmental sustainability, and community development through Sanjeevora. Donate today." },
-      { property: "og:title", content: "Sanjeevora — Together We Can Create Lasting Change" },
-      { property: "og:description", content: "Support education, healthcare, environmental sustainability, and community development through Sanjeevora." },
+      { title: "Sanjeevora Vidya Mission — Together We Can Create Lasting Change" },
+      { name: "description", content: "Support education, healthcare, environmental sustainability, and community development through Sanjeevora Vidya Mission. Donate today." },
+      { property: "og:title", content: "Sanjeevora Vidya Mission — Together We Can Create Lasting Change" },
+      { property: "og:description", content: "Support education, healthcare, environmental sustainability, and community development through Sanjeevora Vidya Mission." },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),

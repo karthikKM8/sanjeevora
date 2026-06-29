@@ -18,10 +18,10 @@ export const Route = createFileRoute("/donate")({
   validateSearch: search,
   head: () => ({
     meta: [
-      { title: "Donate — Sanjeevora" },
-      { name: "description", content: "Make a secure donation to Sanjeevora — funds children's education, healthcare, environment and community work in India." },
-      { property: "og:title", content: "Donate to Sanjeevora" },
-      { property: "og:description", content: "Secure online donation page for Sanjeevora." },
+      { title: "Donate — Sanjeevora Vidya Mission" },
+      { name: "description", content: "Make a secure donation to Sanjeevora Vidya Mission — funds children's education, healthcare, environment and community work in India." },
+      { property: "og:title", content: "Donate to Sanjeevora Vidya Mission" },
+      { property: "og:description", content: "Secure online donation page for Sanjeevora Vidya Mission." },
       { property: "og:url", content: "/donate" },
     ],
     links: [{ rel: "canonical", href: "/donate" }],

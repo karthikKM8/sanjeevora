@@ -6,9 +6,9 @@ import { HowItHelps } from "@/components/sections/HowItHelps";
 export const Route = createFileRoute("/programs")({
   head: () => ({
     meta: [
-      { title: "Our Programs — Jeevora Foundation" },
+      { title: "Our Programs — Sanjeevora Vidya Mission" },
       { name: "description", content: "Creating Sustainable Change Through Four Core Programs." },
-      { property: "og:title", content: "Our Programs — Jeevora Foundation" },
+      { property: "og:title", content: "Our Programs — Sanjeevora Vidya Mission" },
       { property: "og:description", content: "Creating Sustainable Change Through Four Core Programs." },
       { property: "og:url", content: "/programs" },
     ],

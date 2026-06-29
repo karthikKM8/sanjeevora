@@ -8,7 +8,7 @@ export const Route = createFileRoute("/donate/success")({
     name: z.string().optional(),
     ref: z.string().optional(),
   }),
-  head: () => ({ meta: [{ title: "Donation successful — Sanjeevora" }, { name: "robots", content: "noindex" }] }),
+  head: () => ({ meta: [{ title: "Donation successful — Sanjeevora Vidya Mission" }, { name: "robots", content: "noindex" }] }),
   component: () => {
     const s = Route.useSearch();
     return <Navigate to="/donate/thank-you" search={s} />;

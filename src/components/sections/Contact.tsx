@@ -41,13 +41,13 @@ export function Contact() {
         <div className="mt-12 grid gap-8 lg:grid-cols-[1fr_1.2fr]">
           <div className="space-y-4">
             <div className="rounded-3xl border border-border bg-card p-6">
-              <div className="flex items-start gap-3"><MapPin className="mt-0.5 h-5 w-5 text-primary" /><div><p className="text-sm font-semibold">Location</p><p className="text-sm text-muted-foreground">Jeevora Foundation<br/>No. 33, Top Floor, CBI Main Road, Pilappa Garden,<br/>Ganganagar, Bengaluru – 560032, Karnataka, India</p></div></div>
+              <div className="flex items-start gap-3"><MapPin className="mt-0.5 h-5 w-5 text-primary" /><div><p className="text-sm font-semibold">Location</p><p className="text-sm text-muted-foreground">Sanjeevora Vidya Mission<br/>No. 33, Top Floor, CBI Main Road, Pilappa Garden,<br/>Ganganagar, Bengaluru – 560032, Karnataka, India</p></div></div>
               <div className="mt-4 flex items-start gap-3"><Phone className="mt-0.5 h-5 w-5 text-primary" /><div><p className="text-sm font-semibold">Phone</p><p className="text-sm text-muted-foreground">+91 70198 27645</p></div></div>
-              <div className="mt-4 flex items-start gap-3"><Mail className="mt-0.5 h-5 w-5 text-primary" /><div><p className="text-sm font-semibold">Email</p><p className="text-sm text-muted-foreground">hello@jeevorafoundation.com</p></div></div>
+              <div className="mt-4 flex items-start gap-3"><Mail className="mt-0.5 h-5 w-5 text-primary" /><div><p className="text-sm font-semibold">Email</p><p className="text-sm text-muted-foreground">hello@sanjeevoravidyamission.com</p></div></div>
             </div>
             <div className="aspect-[16/10] overflow-hidden rounded-3xl border border-border bg-secondary">
               <iframe
-                title="Sanjeevora office location"
+                title="Sanjeevora Vidya Mission office location"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=77.58%2C13.06%2C77.66%2C13.14&layer=mapnik"
                 className="h-full w-full"
                 loading="lazy"

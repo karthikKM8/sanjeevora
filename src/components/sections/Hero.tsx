@@ -38,7 +38,7 @@ export function Hero() {
             className="mt-5 max-w-xl text-base text-foreground/70 sm:text-lg"
           >
             <strong>Poverty should never decide a child's future.</strong><br/><br/>
-            At Jeevora Foundation, we are committed to transforming lives by providing nutritious meals, quality education, mentorship, and opportunities that empower children to build brighter, more independent futures. Every contribution helps create lasting change—one child, one family, and one community at a time.
+            At Sanjeevora Vidya Mission, we are committed to transforming lives by providing nutritious meals, quality education, mentorship, and opportunities that empower children to build brighter, more independent futures. Every contribution helps create lasting change—one child, one family, and one community at a time.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -79,7 +79,7 @@ export function Hero() {
           >
             <img
               src={hero}
-              alt="Children at a Sanjeevora-supported school smiling and learning"
+              alt="Children at a Sanjeevora Vidya Mission-supported school smiling and learning"
               width={1600}
               height={1024}
               className="h-64 w-full object-cover"
@@ -90,7 +90,7 @@ export function Hero() {
         <div className="lg:hidden">
           <img
             src={hero}
-            alt="Children smiling in a Sanjeevora-supported classroom"
+            alt="Children smiling in a Sanjeevora Vidya Mission-supported classroom"
             width={1600}
             height={1024}
             className="rounded-3xl border border-border object-cover shadow-xl"

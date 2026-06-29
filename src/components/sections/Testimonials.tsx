@@ -2,7 +2,7 @@ import { Quote } from "lucide-react";
 import { Reveal } from "../site/Reveal";
 
 const T = [
-  { name: "Aarav Mehta", role: "Monthly Donor, Mumbai", text: "I've donated to dozens of NGOs. Sanjeevora is the only one that sends me photos of the kids my contribution is supporting." },
+  { name: "Aarav Mehta", role: "Monthly Donor, Mumbai", text: "I've donated to dozens of NGOs. Sanjeevora Vidya Mission is the only one that sends me photos of the kids my contribution is supporting." },
   { name: "Ishita Banerjee", role: "Volunteer, Kolkata", text: "Two weekends a month and I've never felt more useful. The team is warm, organized, and ridiculously hard-working." },
   { name: "Dr. Karan Singh", role: "Medical Camp Partner", text: "Their healthcare program is field-tested and built on respect for the communities. A rare thing in this sector." },
 ];

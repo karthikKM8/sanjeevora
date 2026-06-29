@@ -5,9 +5,9 @@ import { Contact } from "@/components/sections/Contact";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Sanjeevora" },
-      { name: "description", content: "Get in touch with the Sanjeevora team — partnerships, press, donations." },
-      { property: "og:title", content: "Contact — Sanjeevora" },
+      { title: "Contact — Sanjeevora Vidya Mission" },
+      { name: "description", content: "Get in touch with the Sanjeevora Vidya Mission team — partnerships, press, donations." },
+      { property: "og:title", content: "Contact — Sanjeevora Vidya Mission" },
       { property: "og:description", content: "Reach out — we respond within one business day." },
       { property: "og:url", content: "/contact" },
     ],

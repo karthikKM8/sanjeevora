@@ -9,11 +9,11 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <Link to="/" className="flex items-center gap-2">
-              <img src={logo} alt="Jeevora Foundation" width={36} height={36} className="h-9 w-9 object-contain" />
-              <span className="font-display text-xl font-bold">Jeevora Foundation</span>
+              <img src={logo} alt="Sanjeevora Vidya Mission" width={36} height={36} className="h-9 w-9 object-contain" />
+              <span className="font-display text-xl font-bold">Sanjeevora Vidya Mission</span>
             </Link>
             <p className="mt-3 text-sm text-muted-foreground">
-              Jeevora Foundation is dedicated to empowering underprivileged children and young adults through nutrition, education, mentorship, skill development, and career opportunities. Together, we are building a future where every child has the chance to learn, grow, and succeed.
+              Sanjeevora Vidya Mission is dedicated to empowering underprivileged children and young adults through nutrition, education, mentorship, skill development, and career opportunities. Together, we are building a future where every child has the chance to learn, grow, and succeed.
             </p>
             <div className="mt-4 flex gap-2">
               {[Facebook, Instagram, Linkedin, Youtube].map((Icon, i) => (
@@ -49,7 +49,7 @@ export function Footer() {
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 text-primary" /> No. 33, Top Floor, CBI Main Road, Pilappa Garden, Ganganagar, Bengaluru – 560032</li>
               <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 text-primary" /> +91 70198 27645</li>
-              <li className="flex items-start gap-2"><Mail className="mt-0.5 h-4 w-4 text-primary" /> hello@jeevorafoundation.com</li>
+              <li className="flex items-start gap-2"><Mail className="mt-0.5 h-4 w-4 text-primary" /> hello@sanjeevoravidyamission.com</li>
             </ul>
           </div>
           <div>
@@ -75,7 +75,7 @@ export function Footer() {
           <Link to="/refund-policy" className="hover:text-primary">Refund Policy</Link>
         </div>
         <div className="mt-8 flex flex-col items-center justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row">
-          <p>© 2026 Jeevora Foundation. Empowering Children Through Food, Education, Opportunity & Hope.</p>
+          <p>© 2026 Sanjeevora Vidya Mission. Empowering Children Through Food, Education, Opportunity & Hope.</p>
           <p>"Together, we can build a future where every child has the opportunity to dream, learn, and thrive."</p>
         </div>
       </div>

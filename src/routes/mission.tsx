@@ -6,9 +6,9 @@ import { Target, Eye } from "lucide-react";
 export const Route = createFileRoute("/mission")({
   head: () => ({
     meta: [
-      { title: "Our Mission & Vision — Jeevora Foundation" },
+      { title: "Our Mission & Vision — Sanjeevora Vidya Mission" },
       { name: "description", content: "Empowering underprivileged children and young adults to build independent, confident, and meaningful lives." },
-      { property: "og:title", content: "Our Mission & Vision — Jeevora Foundation" },
+      { property: "og:title", content: "Our Mission & Vision — Sanjeevora Vidya Mission" },
       { property: "og:description", content: "Empowering underprivileged children and young adults to build independent, confident, and meaningful lives." },
       { property: "og:url", content: "/mission" },
     ],

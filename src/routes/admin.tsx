@@ -6,7 +6,7 @@ import { IndianRupee, Users, HandHeart, Mail, MessageSquare, Calendar, Heart, Ba
 export const Route = createFileRoute("/admin")({
   head: () => ({
     meta: [
-      { title: "Admin Dashboard — Sanjeevora" },
+      { title: "Admin Dashboard — Sanjeevora Vidya Mission" },
       { name: "robots", content: "noindex" },
     ],
   }),

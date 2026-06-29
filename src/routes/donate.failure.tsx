@@ -10,7 +10,7 @@ export const Route = createFileRoute("/donate/failure")({
     name: z.string().optional(),
     ref: z.string().optional(),
   }),
-  head: () => ({ meta: [{ title: "Payment failed — Sanjeevora" }, { name: "robots", content: "noindex" }] }),
+  head: () => ({ meta: [{ title: "Payment failed — Sanjeevora Vidya Mission" }, { name: "robots", content: "noindex" }] }),
   component: Failure,
 });
 

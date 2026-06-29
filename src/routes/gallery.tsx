@@ -25,9 +25,9 @@ const GALLERY_IMAGES = [
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery — Jeevora Foundation" },
+      { title: "Gallery — Sanjeevora Vidya Mission" },
       { name: "description", content: "Explore the moments of joy, learning, and transformation captured across our programs." },
-      { property: "og:title", content: "Gallery — Jeevora Foundation" },
+      { property: "og:title", content: "Gallery — Sanjeevora Vidya Mission" },
       { property: "og:description", content: "Explore the moments of joy, learning, and transformation captured across our programs." },
       { property: "og:url", content: "/gallery" },
     ],

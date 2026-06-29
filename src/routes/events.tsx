@@ -5,9 +5,9 @@ import { Updates } from "@/components/sections/Updates";
 export const Route = createFileRoute("/events")({
   head: () => ({
     meta: [
-      { title: "Events — Sanjeevora" },
-      { name: "description", content: "Upcoming Sanjeevora events, drives, and community programs you can join." },
-      { property: "og:title", content: "Events — Sanjeevora" },
+      { title: "Events — Sanjeevora Vidya Mission" },
+      { name: "description", content: "Upcoming Sanjeevora Vidya Mission events, drives, and community programs you can join." },
+      { property: "og:title", content: "Events — Sanjeevora Vidya Mission" },
       { property: "og:description", content: "Upcoming events you can be part of." },
       { property: "og:url", content: "/events" },
     ],

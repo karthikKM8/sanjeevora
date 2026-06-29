@@ -20,7 +20,7 @@ export function About() {
               Building Brighter Futures, One Child at a Time
             </h2>
             <div className="mt-4 space-y-4 text-base text-foreground/70">
-              <p>Jeevora Foundation is dedicated to creating meaningful and lasting change in the lives of underprivileged children and young adults. We believe that every child deserves access to nutritious food, quality education, guidance, and opportunities regardless of their background.</p>
+              <p>Sanjeevora Vidya Mission is dedicated to creating meaningful and lasting change in the lives of underprivileged children and young adults. We believe that every child deserves access to nutritious food, quality education, guidance, and opportunities regardless of their background.</p>
               <p>Our work focuses on removing barriers caused by poverty by supporting children's educational journey, improving nutrition, nurturing confidence, and preparing young adults for meaningful careers.</p>
               <p>Together with donors, volunteers, and partners, we are building stronger communities where every child has the opportunity to dream, learn, and succeed.</p>
             </div>

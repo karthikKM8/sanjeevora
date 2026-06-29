@@ -5,9 +5,9 @@ import { VolunteerForm } from "@/components/sections/VolunteerForm";
 export const Route = createFileRoute("/volunteer")({
   head: () => ({
     meta: [
-      { title: "Volunteer with Sanjeevora" },
+      { title: "Volunteer with Sanjeevora Vidya Mission" },
       { name: "description", content: "Give your time. Change a life. Join 1,800+ volunteers across India." },
-      { property: "og:title", content: "Volunteer with Sanjeevora" },
+      { property: "og:title", content: "Volunteer with Sanjeevora Vidya Mission" },
       { property: "og:description", content: "Sign up to volunteer in education, healthcare, environment and more." },
       { property: "og:url", content: "/volunteer" },
     ],
